@@ -20,19 +20,19 @@ public class InputRekening extends javax.swing.JFrame {
 //    String nasabahName;
     public InputRekening() {
         //MYSQL Connection check
-        try{
-            Bridge bd = new Bridge();
-            bd.checkConnect();
-            if (bd.rs.next()) {
-                initComponents();
-                System.out.println("( OK ) Tabel ditemukan !");
-            } else{
-//                JOptionPane.showMessageDialog(this, "Tabel error","PERIKSA TABEL",JOptionPane.ERROR_MESSAGE);
-                  System.out.println("( ERROR )Tabel error !");
-            }
-        } catch(Exception e){
-//            e.printStackTrace();
-        }
+//        try{
+//            Bridge bd = new Bridge();
+//            bd.checkConnect();
+//            if (bd.rs.next()) {
+//                initComponents();
+//                System.out.println("( OK ) Tabel ditemukan !");
+//            } else{
+////                JOptionPane.showMessageDialog(this, "Tabel error","PERIKSA TABEL",JOptionPane.ERROR_MESSAGE);
+//                  System.out.println("( ERROR )Tabel error !");
+//            }
+//        } catch(Exception e){
+////            e.printStackTrace();
+//        }
     }
     
     void checkRek(){

@@ -2,6 +2,13 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/C:/Users/David/Documents/NetBeansProjects/Simulasi%20ATM%20via%20Database/src/com/futaba/DataBridge.java</file>
+            <file>file:/C:/Users/David/Documents/NetBeansProjects/Simulasi%20ATM%20via%20Database/src/com/futaba/ConfigFileManager.java</file>
+            <file>file:/C:/Users/David/Documents/NetBeansProjects/Simulasi%20ATM%20via%20Database/src/com/futaba/launcher.java</file>
+            <file>file:/C:/Users/David/Documents/NetBeansProjects/Simulasi%20ATM%20via%20Database/src/com/futaba/InputRekening.java</file>
+            <file>file:/C:/Users/David/Documents/NetBeansProjects/Simulasi%20ATM%20via%20Database/src/com/futaba/DBSettings.java</file>
+            <file>file:/C:/Users/David/Documents/NetBeansProjects/Simulasi%20ATM%20via%20Database/src/com/futaba/DatabaseSetting.java</file>
+        </group>
     </open-files>
 </project-private>

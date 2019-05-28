@@ -14,18 +14,12 @@ public class DatabaseSetting extends javax.swing.JFrame {
     String urlPath = "D:\\url.txt";
     String usernamePath = "D:\\TestUsername.txt";
     String uname,pass,table;
-    ConfigInit cfgIn;
     public DatabaseSetting() {
         initComponents();
         tfUrl.setEditable(false);
         tfUname.setEditable(false);
         tfPass.setEditable(false);
         tfNasabahTable.setEditable(false);
-        cfgIn = new ConfigInit();
-        tfUrl.setText(cfgIn.url);
-        tfUname.setText(cfgIn.username);
-        tfPass.setText(cfgIn.password);
-        tfNasabahTable.setText(cfgIn.tables);
     }
     
     void writeConfig(String fileName,String content) throws IOException{
@@ -275,7 +269,8 @@ public class DatabaseSetting extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-          doSave();
+          ConfigFileManager cfm = new ConfigFileManager();
+          cfm.writeConfig(tfUrl.getText(), tfUname.getText(), tfPass.getText(), tfNasabahTable.getText());
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
@@ -351,21 +346,21 @@ public class DatabaseSetting extends javax.swing.JFrame {
 
     private void cDeaultItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_cDeaultItemStateChanged
         // TODO add your handling code here:
-        if (cDeault.isSelected()){
-            tfUrl.setText("jdbc:mysql://localhost/bank_indonesia");
-            tfUname.setText("root");
-            tfPass.setText("");
-            tfNasabahTable.setText("nasabah");
-        } else{
-            tfUrl.setText(null);
-            tfUname.setText(null);
-            tfPass.setText(null);
-            tfNasabahTable.setText(null);
-            tfUrl.setText(cfgIn.url);
-            tfUname.setText(cfgIn.username);
-            tfPass.setText(cfgIn.password);
-            tfNasabahTable.setText(cfgIn.tables);
-        }
+//        if (cDeault.isSelected()){
+//            tfUrl.setText("jdbc:mysql://localhost/bank_indonesia");
+//            tfUname.setText("root");
+//            tfPass.setText("");
+//            tfNasabahTable.setText("nasabah");
+//        } else{
+//            tfUrl.setText(null);
+//            tfUname.setText(null);
+//            tfPass.setText(null);
+//            tfNasabahTable.setText(null);
+//            tfUrl.setText(cfgIn.url);
+//            tfUname.setText(cfgIn.username);
+//            tfPass.setText(cfgIn.password);
+//            tfNasabahTable.setText(cfgIn.tables);
+//        }
     }//GEN-LAST:event_cDeaultItemStateChanged
 
     private void cConditionsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cConditionsActionPerformed
